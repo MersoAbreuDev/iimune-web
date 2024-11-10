@@ -1,0 +1,35 @@
+
+
+<div class="login">
+    <div class="login-content">
+        <div class="content-form">
+            <div class="wrapper">
+                <div class="form-title">
+                    <h2>Boas-vindas ao Portal de Vacina! <br>
+                        Para começar, qual seu email?</h2>
+                </div>
+                <div class="form-text">
+                    <p>Precisamos desta confirmação para dar <br>
+                        início ao seu acesso.</p>
+                </div>
+                <div class="form">
+                    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                        <app-custom-input titulo="Email" icone="check_circle" formControlName="login" name="login" ></app-custom-input>
+                        <app-custom-input-password titulo="Senha" type="password" formControlName="senha" name="senha"></app-custom-input-password>
+                        <div class="button-template">
+                            <app-custom-button type="submit" titulo="Acessar"></app-custom-button>
+                        </div>
+                    </form>
+                </div>
+                <div class="forgot-password">
+                    <p>Esqueceu a senha? <a routerLink="/forgot-password">Acesse aqui</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="content-partial">
+            <app-partial-background></app-partial-background>
+        </div>
+    </div>
+</div>
+
+

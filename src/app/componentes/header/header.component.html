@@ -1,0 +1,30 @@
+<div class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="avatar">
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Perfil</button>
+                    <button mat-menu-item (click)="onLogout()">Logout</button>
+                </mat-menu>
+                <button [matMenuTriggerFor]="menu"><img src="./assets/images/avatar.png" alt="user_avatar"></button>
+            </div>
+            <div class="utils">
+                <a routerLink="/aplication">
+                    <mat-icon class="material-symbols-outlined">
+                        home
+                    </mat-icon>
+                </a>
+                <a>
+                    <mat-icon class="material-symbols-outlined">
+                        visibility
+                    </mat-icon>
+                </a>
+                <a>
+                    <mat-icon class="material-symbols-outlined" (click)="ativarLoading()">
+                        repeat
+                    </mat-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+
+<mat-dialog-actions>
+    <mat-icon class="material-symbols-outlined" (click)="closeModal()" class="close">
+        close
+    </mat-icon>
+</mat-dialog-actions>
+<mat-dialog-content>
+    <mat-icon class="material-symbols-outlined" [style.color]="data.cor">
+        {{ data.icone }} 
+    </mat-icon>
+    <h2>{{ data.titulo }}</h2>
+    <p>{{ data.subtitulo }}</p>
+</mat-dialog-content>
