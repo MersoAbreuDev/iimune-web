@@ -1,4 +1,4 @@
-# Projeto Teste - Desenvolvedor Front End
+# Projeto Hackathon
 
 Este projeto foi feito com [Angular CLI](https://github.com/angular/angular-cli) versão 14.2.13.
 
